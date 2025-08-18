@@ -24,7 +24,8 @@ export function Post({ title, author }) {
 
                 <p>{title}</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam soluta enim ab modi obcaecati dolorum quis, illo suscipit ratione voluptatem quam assumenda totam eius dolore reprehenderit odio, vero quibusdam amet.</p>
-            
+                <p><a href="">Teste.link</a></p>
+
             </div>
         </article>
     ) 
