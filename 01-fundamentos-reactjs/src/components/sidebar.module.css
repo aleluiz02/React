@@ -17,6 +17,27 @@
   padding: 1rem;
 }
 
+.profile img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 8px;
+  border: 3px solid var(--green-500);
+  margin-top: -2rem ;
+  outline: 2px solid var(--gray-800);
+}
+
+.profile strong {
+  margin-top: 1rem;
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.profile span {
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
 .sidebar footer {
   border-top:  1px solid var(--gray-600);
   margin-top: 1.5rem;
@@ -36,4 +57,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.75rem;
+}
+
+.sidebar footer a:hover {
+  background: var(--green-500);
+  color: var(--white);
+  transition: background-color 0.2s;
 }
