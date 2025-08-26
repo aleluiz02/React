@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import { Header } from "./components/header.jsx";
 import { Post } from "./components/post.jsx"
 import { Sidebar } from "./components/sidebar.jsx";
+import { Comment } from "./components/comment.jsx";
 
 import './global.css';
 

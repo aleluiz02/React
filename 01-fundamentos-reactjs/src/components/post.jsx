@@ -1,4 +1,5 @@
 import styles from './post.module.css';
+import { Comment } from './comment.jsx';    
 
 export function Post({ title, author }) {
     return (   
@@ -35,6 +36,12 @@ export function Post({ title, author }) {
                     <button type='submit'>Publicar</button>
                 </footer>
             </form>
+
+            <div className={styles.commentList}>
+                <Comment text="Great post! Thanks for sharing." author="Alice Smith"/>
+                <Comment text="Informative read, looking forward to more!" author="Bob Johnson"/>
+            </div>
+
         </article>
     ) 
 }
