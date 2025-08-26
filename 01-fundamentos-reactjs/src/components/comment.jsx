@@ -18,8 +18,7 @@ export function Comment({ text, author }) {
                     </div>
 
                     <button title='Deletar comentário'>
-                        <Trash size={20} />
-                        &times;
+                        <Trash size={24} />
                     </button>
                 </header>
 
