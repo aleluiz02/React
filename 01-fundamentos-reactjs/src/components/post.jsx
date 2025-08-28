@@ -1,5 +1,6 @@
 import styles from './post.module.css';
 import { Comment } from './comment.jsx';    
+import { Avatar } from './avatar.jsx';
 
 export function Post({ title, author }) {
     return (   
@@ -7,9 +8,8 @@ export function Post({ title, author }) {
             <header>
 
                 <div className={styles.author}>
-                    <img
-                    className={styles.avatar}
-                    src='https://media.licdn.com/dms/image/v2/D4D03AQGpGwOvX1aJug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718588423549?e=1758153600&v=beta&t=tUNM2LzpRW6VCwnZ8MfE30xtEFiyNs9gl-2MHuzxLk8'
+                    <Avatar 
+                        src='https://github.com/FernaCaroline.png'
                     />
                     <div className={styles.authorInfo}>
                         <strong>{author}</strong>
