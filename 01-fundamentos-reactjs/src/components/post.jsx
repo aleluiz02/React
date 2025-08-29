@@ -20,6 +20,13 @@ export function Post({author, publishedAt, content}) {
             setNewCommentText('');                 
     }
 
+    function deleteComment(commentToDelete) {
+        const commentsWithoutDeletedOne = comments.filter(comment => {
+            return comment !== commentToDelete;})
+        setComments(commentsWithoutDeletedOne);
+        
+    }
+
 
     return (   
         <article className={styles.post}>
@@ -66,6 +73,7 @@ export function Post({author, publishedAt, content}) {
                         authorName={author.name}
                         avatarUrl={author.avatarUrl}
                         content={comment}
+                        onDeleteComment={deleteComment}
                     />
                 })}
             </div>
